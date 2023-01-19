@@ -10,8 +10,11 @@ function SearchBar({ onSubmit }) {
   };
   return (
     <div className='flex gap-3 p-2 bg-slate-100'>
-      <form onSubmit={handleFormSubmit}>
+      <form onSubmit={handleFormSubmit} className='flex gap-2'>
         <input value={term} className='input' onChange={handleChange} />
+        <button className='btn' onChange={handleChange}>
+          查詢
+        </button>
       </form>
     </div>
   );
